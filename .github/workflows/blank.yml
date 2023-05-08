@@ -17,7 +17,9 @@ jobs:
           echo test, and deploy your project.
   deployment:
     runs-on: ubuntu-latest
-    environment: dev
+    environment:
+      name: dev
+      url: https://github.com
     steps:
       - name: deploy
         run: |
